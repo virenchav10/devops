@@ -1,6 +1,6 @@
 services:
   backend-flask:
-    image: virenchav/backend:4.0.0  # Replace with your Docker Hub username
+    image: virenchav/backend:2.0.0  # Replace with your Docker Hub username
     ports:
       - "4000:4000"
     environment:
@@ -10,7 +10,7 @@ services:
       - app-network
 
   frontend:
-    image: virenchav/frontend:4.0.0  # Replace with your Docker Hub username
+    image: virenchav/frontend:2.0.0  # Replace with your Docker Hub username
     ports:
       - "80:80"
     depends_on:
