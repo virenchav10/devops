@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  DOCKER_BACKEND_IMAGE: ${{ secrets.DOCKER_USERNAME }}/lms-backend
-  DOCKER_FRONTEND_IMAGE: ${{ secrets.DOCKER_USERNAME }}/lms-frontend
+  DOCKER_BACKEND_IMAGE: ${{ secrets.DOCKER_USERNAME }}/backend
+  DOCKER_FRONTEND_IMAGE: ${{ secrets.DOCKER_USERNAME }}/frontend
   REACT_APP_API_URL: http://${{ secrets.SERVER_IP }}
 
 jobs:
